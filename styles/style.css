@@ -1,5 +1,76 @@
-body{
-    padding: 0px;
-    margin: 0px;
-    width: 1440px;
+body {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 576px;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Kumbh Sans;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: #4A556C;
+
+}
+
+.logo {
+  margin-top: 16px;
+  margin-left: 85px;
+}
+
+.nav-button {
+  width: 193px;
+  height: 40px;
+  left: 383px;
+  border-radius: 4px;
+  padding: 11px, 16px, 11px, 16px;
+  gap: 10px;
+  background: #20ad96;
+  border: none;
+}
+
+.nav-btn-text {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #fff;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
 }
