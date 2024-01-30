@@ -11,26 +11,26 @@ header {
   justify-content: space-around;
 }
 
-nav {
+.navbar-link {
   width: 576px;
   height: 40px;
   border-radius: 4px;
   margin-top: 16px;
 }
 
-nav ul {
+.navbar-link ul {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-nav li {
+.navbar-link li {
   display: inline-block;
   margin-right: 20px;
 }
 
-nav a {
+.navbar-link a {
   text-decoration: none;
   font-family: Kumbh Sans;
   font-size: 15px;
@@ -38,8 +38,7 @@ nav a {
   line-height: 24px;
   letter-spacing: -0.02em;
   text-align: right;
-  color: #4A556C;
-
+  color: #4a556c;
 }
 
 .logo {
@@ -68,9 +67,59 @@ nav a {
   color: #fff;
 }
 
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #dcd7d7;
+  margin: 6px 0;
+}
+
 /* media query */
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
+  }
+
+  header {
+    display: block;
+  }
+
+  .navbar-link {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color:#dcd7d7;
+    z-index: 1;
+  }
+
+  .navbar-link a{
+    margin-left: 9px;
+    font-size: 18px;
+  }
+
+  .nav-button{
+    margin-top: 10px;
+  }
+
+  .navbar-link.show {
+    display: flex;
+  }
+
+  .navbar-link li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .mobile-nav {
+    display: flex;
   }
 }

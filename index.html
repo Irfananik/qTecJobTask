@@ -9,18 +9,27 @@
   <body>
     <main>
       <!-- manubar -->
-      <section class="manubar">
+      <section class="menubar">
         <header>
           <div class="logo"><img src="images/logo.png" alt="navLogo" /></div>
-          <nav>
+          <nav class="navbar-link">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Contact</a></li>
-              <li><button class="nav-button"><span class="nav-btn-text">Get your free guide now</span></button></li>
+              <li>
+                <button class="nav-button">
+                  <span class="nav-btn-text">Get your free guide now</span>
+                </button>
+              </li>
             </ul>
           </nav>
+          <div class="mobile-nav" onclick="mobileMenuToggle()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
         </header>
       </section>
     </main>
