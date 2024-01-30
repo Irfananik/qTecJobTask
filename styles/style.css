@@ -198,9 +198,59 @@ p {
   font-size: 12px;
   line-height: 24px;
   letter-spacing: -0.01em;
-  color: #8E95A3;
+  color: #8e95a3;
 }
 
+/*------------------ help section style ----------------------*/
+.help-part1 {
+  width: 1034px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.help-vector {
+  position: relative;
+  width: 101px;
+  height: 17px;
+  top: 120px;
+  left: 120px;
+}
+
+.help-part1-text1 {
+  width: 492px;
+  height: 112px;
+  font-family: Kumbh Sans;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-part1-text2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-part1-text2 p {
+  width: 478px;
+  height: 200px;
+  font-family: Kumbh Sans;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4a556c;
+}
 /* --------------------media query ------------------*/
 @media screen and (max-width: 600px) {
   body {
@@ -268,7 +318,8 @@ p {
     margin-left: 0px;
   }
 
-  .banner-vector, img{
+  .banner-vector,
+  img {
     width: 100px;
   }
 
@@ -290,7 +341,8 @@ p {
     margin-top: 120px;
   }
 
-  .banner-right, img {
+  .banner-right,
+  img {
     width: 100%;
   }
 
@@ -305,5 +357,47 @@ p {
     position: absolute;
     top: 726px;
     left: 0px;
+  }
+
+  /*------------------- help section ----------------------*/
+  .help-vector {
+    position: relative;
+    width: 101px;
+    height: 17px;
+    top: 500px;
+    left: 0px;
+  }
+
+  .help-part1 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 500px;
+    margin-left: 0;
+  }
+
+  .help-part1-text1 {
+    width: 100%;
+    font-family: Kumbh Sans;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .help-part1-text2 p {
+    width: 100%;
+    font-family: Kumbh Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #4a556c;
   }
 }
