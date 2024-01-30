@@ -6,6 +6,8 @@ body {
   margin-right: auto;
 }
 
+/*------------------ header styles----------------- */
+
 header {
   display: flex;
   justify-content: space-around;
@@ -55,6 +57,7 @@ header {
   gap: 10px;
   background: #20ad96;
   border: none;
+  cursor: pointer;
 }
 
 .nav-btn-text {
@@ -80,11 +83,131 @@ header {
   margin: 6px 0;
 }
 
-/* media query */
+/* ----------------banner styles----------------- */
+
+.banner-body {
+  width: 1440px;
+  height: 703px;
+  margin-top: 10px;
+  background-color: #faf8f6;
+}
+
+.banner-tow-side {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner-vector {
+  margin-top: 55px;
+  margin-left: 34px;
+}
+
+.banner-left {
+  width: 545px;
+  height: 396px;
+  top: 200px;
+  left: 85px;
+  border-radius: 24px;
+}
+
+.banner-mini-title {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 5px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #4a556c;
+  opacity: 0.4;
+}
+
+.banner-title {
+  font-family: Kumbh Sans;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 86px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.banner-text {
+  font-family: Kumbh Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.banner-btn {
+  width: 250px;
+  height: 42px;
+  top: 554px;
+  left: 85px;
+  padding: 9px, 16px, 9px, 16px;
+  border-radius: 10px;
+  gap: 10px;
+  background: #20ad96;
+  border: none;
+  cursor: pointer;
+}
+
+.banner-btn-text {
+  font-family: Kumbh Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.banner-right {
+  width: 462px;
+  height: 603px;
+  margin-top: 50px;
+  margin-right: 80px;
+}
+
+.banner-img-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 237px;
+  height: 104px;
+  margin-right: 200px;
+  gap: 10px;
+  position: absolute;
+  top: 140px;
+  left: 896px;
+}
+
+.banner-img-icon-text,
+p {
+  font-family: AvertaStd-Black;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  color: #333461;
+  font-weight: bolder;
+}
+
+.banner-img-icon-sm-text {
+  font-family: AvertaStd-Regular;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8E95A3;
+}
+
+/* --------------------media query ------------------*/
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
   }
+
+  /*-------------- header styles------------ */
 
   header {
     display: block;
@@ -97,21 +220,22 @@ header {
     position: absolute;
     top: 80px;
     left: 0;
-    background-color:#dcd7d7;
+    background-color: #dcd7d7;
     z-index: 1;
   }
 
-  .navbar-link a{
+  .navbar-link a {
     margin-left: 9px;
     font-size: 18px;
   }
 
-  .nav-button{
+  .nav-button {
     margin-top: 10px;
   }
 
   .navbar-link.show {
     display: flex;
+    margin-top: 50px;
   }
 
   .navbar-link li {
@@ -121,5 +245,65 @@ header {
 
   .mobile-nav {
     display: flex;
+  }
+
+  .logo {
+    width: 230px;
+    margin-top: 16px;
+    margin-left: 40px;
+  }
+
+  /*--------------- banner styles------------- */
+  .banner-body {
+    width: 100%;
+  }
+
+  .banner-tow-side {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .banner-vector {
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+
+  .banner-vector, img{
+    width: 100px;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-title {
+    font-family: Kumbh Sans;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+
+  .banner-right {
+    width: 100%;
+    margin-top: 120px;
+  }
+
+  .banner-right, img {
+    width: 100%;
+  }
+
+  .banner-img-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 190px;
+    height: 70px;
+    gap: 10px;
+    position: absolute;
+    top: 726px;
+    left: 0px;
   }
 }
