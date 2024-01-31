@@ -4,9 +4,6 @@
 - &nbsp; Static web site <br>
 - &nbsp; Pc responsive minimum width 1440px <br>
 - &nbsp; Fully mobile responsive <br>
-- &nbsp; GitHub <br>
-- &nbsp; Netlify <br>
-- &nbsp; VS code editor <br>
 
 
 <h3> Technologies Used</h3>
