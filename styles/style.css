@@ -251,6 +251,40 @@ p {
   text-align: left;
   color: #4a556c;
 }
+
+.help-part2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.help-card {
+  width: 380px;
+  height: 328px;
+}
+
+
+
+.help-card h1 {
+  font-family: Kumbh Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #041434;
+}
+
+.help-card p {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #4A556C;
+}
 /* --------------------media query ------------------*/
 @media screen and (max-width: 600px) {
   body {
@@ -399,5 +433,22 @@ p {
     letter-spacing: 0em;
     text-align: left;
     color: #4a556c;
+  }
+
+  .help-part2 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  .help-card{
+    width: 100%;
+    height: 250px;
+  }
+
+  .help-card img {
+    width: 62px;
+    height: 62px;
   }
 }
