@@ -264,8 +264,6 @@ p {
   height: 328px;
 }
 
-
-
 .help-card h1 {
   font-family: Kumbh Sans;
   font-size: 24px;
@@ -283,8 +281,60 @@ p {
   line-height: 24px;
   letter-spacing: -0.02em;
   text-align: left;
-  color: #4A556C;
+  color: #4a556c;
 }
+
+/*----------------------- comments section styles  --------------------------*/
+.comments-body {
+  width: 1440px;
+  height: 879px;
+  background: #faf8f6;
+}
+
+.comments-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.comment-card {
+  width: 400px;
+  height: 391px;
+  background-color: #fff;
+  margin-left: 28px;
+  padding: 10px;
+}
+
+.comments-title {
+  font-family: Kumbh Sans;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.01em;
+  color: #333461;
+  position: relative;
+  top: 70px;
+  left: 80px;
+}
+
+.comment-card p {
+  font-family: Kumbh Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #4a556c;
+}
+
+.retind-image {
+  display: block;
+  width: 116px;
+  height: 20px;
+  margin-top: 10px;
+}
+
 /* --------------------media query ------------------*/
 @media screen and (max-width: 600px) {
   body {
@@ -442,7 +492,7 @@ p {
     margin-top: 200px;
   }
 
-  .help-card{
+  .help-card {
     width: 100%;
     height: 250px;
   }
@@ -450,5 +500,44 @@ p {
   .help-card img {
     width: 62px;
     height: 62px;
+  }
+
+  /*----------------------- comments section style  -------------------------*/
+  .comments-body {
+    width: 100%;
+  }
+
+  .comments-cards {
+    display: block;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .comment-card {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .comments-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    color: #333461;
+    position: relative;
+    top: 70px;
+    left: 5px;
+  }
+
+  .comment-card img {
+    width: 69px;
+    height: 70px;
+  }
+
+  .retind-image img{
+    display: block;
+    width: 116px;
+    height: 20px;
+    margin-top: 10px;
   }
 }
