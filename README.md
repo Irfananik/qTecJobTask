@@ -16,6 +16,6 @@
 
 <br>
 
-* [Live site link](https://slashit23-jobtask.netlify.app/ "more info")
+* [Live site link](https://qtecjobtask.netlify.app/ "more info")
 
 ***Thank you so much for visiting my GitHub!***
